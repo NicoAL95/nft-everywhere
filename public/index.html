@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./img/NFT-Fav.png">
+
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- SASS -->
+    <link rel="stylesheet" href="./css/addons.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+    <title>NFT Everywhere</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="relative">
+
+        <!-- Background And Image Filter -->
+        <div class="absolute w-full h-full -z-10">
+            <div class="relative bg-headerBg bg-cover w-full h-full">
+                <div class="bgFilter"></div>
+            </div>
+        </div>
+
+        <div class="px-[40px] sm:px-[68px] md:px-[88px] pt-[24px]">
+
+            <!-- Navbar -->
+                <nav class="flex justify-between mb-0 md:mb-[60px]">
+                    <div class="title">
+                        <h1 class="text-[24px] font-semibold text-white "><span class="text-primary">NFT</span> Everywhere</h1>
+                    </div>
+                    <div class="hamburger cursor-pointer pt-2 bmd:hidden" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                    </div>
+                    <div class="rightSide z-20 fixed bg-mainBackground top-0 right-[-100%] h-screen py-8 bmd:py-0 bmd:bg-transparent bmd:static bmd:h-auto" id="rightSide">
+                        <div class="flex px-[40px] mb-3 justify-between items-center bmd:hidden">
+                            <h1 class="text-[20px] font-semibold text-primary mr-20">Menu</h1>
+                            <a href="#" id="navClick">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"  viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="px-[36px] mb-4 bmd:hidden">
+                            <hr class="mt-2 h-[1px] border-white/40">
+                        </div>
+                        <ul class="list-none flex flex-col bmd:flex-row bmd:space-x-[24px]">
+                            <li class="navBut">
+                                <a href="#">Explore</a>
+                            </li>
+                            <li class="navBut">
+                                <a href="#">Stats</a>
+                            </li>
+                            <li class="navBut">
+                                <a href="#">
+                                    Help
+                                </a>
+                            </li>
+                            <li class="font-medium text-[16px] bmd:text-[20px] py-[13px] text-white px-[40px] bmd:py-0 bmd:px-0">
+                                <a href="#" class="bg-secondary/30 py-[8px] px-[36px] rounded-lg">Login</a>
+                            </li>
+                        </ul>
+                        <div class="bmd:hidden absolute bottom-0 px-[30px]">
+                            <hr class="mt-[50px] h-[1px] border-white/40">
+                            <div class="flex justify-center my-5">
+                                <h1 class="text-primary text-[12px]">© Nico Abel Laia | WeekGenz</h1>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            <!-- End Navbar -->
+
+            <!-- Content Header -->
+            <div class="grid grid-cols-12 grid-rows-1">
+                <div class="col-span-full md:col-span-7 mmd:col-span-5">
+                    <div class="headTitle">
+                        <h1>Create and Sell<br>Your Digital<br>Masterpiece</h1>
+                    </div>
+                    <div class="headParag">
+                        <p>The biggest marketplace that sells digital<br>asset from crypto</p>
+                    </div>
+                    <div class="headButton mt-[24px]">
+                        <a href="#" class="bg-primary py-[8px] px-[32px] rounded-lg text-white font-semibold">Explore</a>
+                    </div>
+                </div>
+                <div class="picHead">
+                    <div class="grid grid-cols-3 mmd:grid-cols-7">
+                        <div class="col-span-3 hidden mmd:block mmd:col-span-3 mlg:col-span-2 mlg:block text-center relative">
+                            <div class="cardHead">
+                                <div class="headImgLeftCard w-full h-[246px] relative">
+                                    <img class="object-cover h-full w-full rounded-xl" src="./img/leftCard.jpg" alt="">
+                                    <div class="absolute top-0 right-0">
+                                        <div class="priceTag">
+                                            <img class="h-[20px] w-auto" src="./img/eth.svg" alt="">
+                                            <h6 class="ml-2 text-white">0.5</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="headCardCap text-left mt-[8px]">
+                                    <h1 class="headCardName">Carvil Sanchez</h1>
+                                    <h2 class="headCardTitle">Abstract Art #120</h2>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-span-full mmd:col-span-4 mlg:col-span-3 text-center px-3 mb-12">
+                        <div class="w-full">
+                            <div class="headImgLeftCard mmd:w-full h-[376px] relative">
+                                <img class="object-cover h-full w-full rounded-xl" src="./img/midCard.jpg" alt="">
+                                <div class="absolute top-0 right-0">
+                                    <div class="priceTag">
+                                        <img class="h-[20px] w-auto" src="./img/eth.svg" alt="">
+                                        <h6 class="ml-2 text-white">0.5</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headCardCap text-left mt-[8px]">
+                                <h1 class="headCardName">Vasquez Del Pierro</h1>
+                                <h2 class="headCardTitle">Italian Mask #007</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-2 text-center relative hidden mlg:block">
+                        <div class="cardHead">
+                            <div class="headImgLeftCard w-full h-[246px] relative">
+                                <img class="object-cover h-full w-full rounded-xl" src="./img/rightCard.jpg" alt="">
+                                <div class="absolute top-0 right-0">
+                                    <div class="priceTag">
+                                        <img class="h-[20px] w-auto" src="./img/eth.svg" alt="">
+                                        <h6 class="ml-2 text-white">0.5</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headCardCap text-left mt-[8px]">
+                                <h1 class="headCardName">Jarvis Scott </h1>
+                                <h2 class="headCardTitle">Human Art #102</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- End Content Header -->
+
+            <!-- Picture Header -->
+            <div class="picHeader">
+                <div class="imgHead">
+                    <div class="headCardFilter"></div>
+                    <img class="headImgWrapper" src="./img/headCards/lite/1.jpg" alt="">
+                </div>
+                <div class="imgHead hidden bmd:block">
+                    <div class="headCardFilter"></div>
+                    <img class="headImgWrapper" src="./img/headCards/lite/2.jpg" alt="">
+                </div>
+                <div class="imgHead">
+                    <div class="headCardFilter"></div>
+                    <img class="headImgWrapper" src="./img/headCards/lite/3.jpg" alt="">
+                </div>
+                <div class="imgHead">
+                    <div class="headCardFilter"></div>
+                    <img class="headImgWrapper" src="./img/headCards/lite/4.jpg" alt="">
+                </div>
+                <div class="imgHead hidden sm:block">
+                    <div class="headCardFilter"></div>
+                    <img class="headImgWrapper" src="./img/headCards/lite/5.jpg" alt="">
+                </div>
+                <div class="imgHead hidden sm:block">
+                    <div class="headCardFilter"></div>
+                    <img class="headImgWrapper" src="./img/headCards/lite/6.jpg" alt="">
+                </div>
+                <div class="imgHead hidden bmd:block">
+                    <div class="headCardFilter"></div>
+                    <img class="headImgWrapper" src="./img/headCards/lite/7.jpg" alt="">
+                </div>
+                <div class="imgHead hidden lg:block">
+                    <div class="headCardFilter"></div>
+                    <img class="headImgWrapper" src="./img/headCards/lite/8.jpg" alt="">
+                </div>
+            </div>
+            <!-- End Picture Header -->
+            
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main class="bg-mainBackground pt-[34px]">
+        
+        <!-- Web Count -->
+        <section class="webCount">
+            <div class="itemCount">
+                <div class="text-center">
+                    <h1 class="countNum">51K+</h1>
+                    <h2 class="countName">Artworks</h2>
+                </div>
+                <div class="text-center">
+                    <h1 class="countNum">91K+</h1>
+                    <h2 class="countName">Artists</h2>
+                </div>
+                <div class="text-center">
+                    <h1 class="countNum">101K+</h1>
+                    <h2 class="countName">Aucations</h2>
+                </div>
+            </div>
+        </section>
+        <!-- End Web Count -->
+
+        <!-- Category -->
+        <section class="category">
+            <div class="grid grid-cols-12 grid-rows-1">
+                <div class="col-span-12">
+                    <h1 class="catHeader">Category</h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 grid-rows-1 mt-[16px] bsm:gap-x-8">
+                <div class="col-span-full bsm:col-span-6 mb-6 mmd:col-span-3">
+                    <div class="relative cursor-pointer">
+                        <div class="absolute top-0 right-0">
+                            <h1 class="catName">Digital Arts</h1>
+                        </div>
+                        <img class="catImg" src="https://images.unsplash.com/photo-1635243824676-e2f0f45a88e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+                    </div>
+                </div>
+                <div class="col-span-full bsm:col-span-6 mb-6 mmd:col-span-3 lg:mb-0">
+                    <div class="relative catCard cursor-pointer">
+                        <div class="absolute top-0 right-0">
+                            <h1 class="catName">Abstract</h1>
+                        </div>
+                        <img class="catImg" src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                    </div>
+                </div>
+                <div class="col-span-full bsm:col-span-6 mb-6 mmd:col-span-3 lg:mb-0">
+                    <div class="relative catCard cursor-pointer">
+                        <div class="absolute top-0 right-0">
+                            <h1 class="catName">Pixels</h1>
+                        </div>
+                        <img class="catImg" src="https://images.unsplash.com/photo-1635323979696-a0279890cf25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                    </div>
+                </div>
+                <div class="col-span-full bsm:col-span-6 mb-6 mmd:col-span-3">
+                    <div class="relative catCard cursor-pointer">
+                        <div class="absolute top-0 right-0">
+                            <h1 class="catName">Photography</h1>
+                        </div>
+                        <img class="catImg" src="https://images.unsplash.com/photo-1549887552-cb1071d3e5ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Category -->
+
+        <!-- Carousel -->
+        <section class="carousel pt-[56px]">
+            <div class="grid grid-cols-12 grid-rows-1 px-[40px] sm:px-[68px] md:px-[88px]">
+                <div class="col-span-12">
+                    <div class="flex justify-between items-center">
+                        <h1 class="popularTitle">Popular Items</h1>
+                        <a href="#" class="seeAllCar">See All Items</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[36px] ml-[-44px] sm:ml-0" id="wrapCard"> 
+                
+                <div class="owl-carousel owl-theme" id="cardCarousel">
+
+                    <!-- Carousel Items-->
+                    <div class="cardCaro">
+                        <div class="cardCaroCon">
+                            <div class="carouImg">
+                                <img class="caroImgWrap" src="https://images.unsplash.com/photo-1634320714682-ae8b9c9cee60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="">
+                            </div>
+                            <div class="cardCarouCont">
+                                <div class="flex-1">
+                                    <h1>Nicola Gates</h1>
+                                </div>
+                                <div class="flex-none">
+                                    <h1>Prices</h1>
+                                </div>
+                            </div>
+                            <div class="carouItemTitle">
+                                <div class="flex-1">
+                                    <div class="w-[154px] sm:w-[194px]">
+                                        <h1>Monalego Digital Arts #184</h1>
+                                    </div>
+                                </div>
+                                <div class="flex-none">
+                                    <div class="flex">
+                                        <img class="h-auto w-auto mr-2" src="./img/eth.svg" alt="">
+                                        <h1>1.12</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex absolute bottom-0 w-full">
+                                <a href="#" class="carouBut">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Items-->
+                    <div class="cardCaro">
+                        <div class="cardCaroCon">
+                            <div class="carouImg">
+                                <img class="caroImgWrap" src="https://images.unsplash.com/photo-1579541814924-49fef17c5be5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80" alt="">
+                            </div>
+                            <div class="cardCarouCont">
+                                <div class="flex-1">
+                                    <h1>Leonardo Trievaz</h1>
+                                </div>
+                                <div class="flex-none">
+                                    <h1>Prices</h1>
+                                </div>
+                            </div>
+                            <div class="carouItemTitle">
+                                <div class="flex-1">
+                                    <div class="w-[144px] sm:w-[194px]">
+                                        <h1>Raise Of Rome Arts #12</h1>
+                                    </div>
+                                </div>
+                                <div class="flex-none">
+                                    <div class="flex">
+                                        <img class="h-auto w-auto mr-2" src="./img/eth.svg" alt="">
+                                        <h1>0.75</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex absolute bottom-0 w-full">
+                                <a href="#" class="carouBut">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Items-->
+                    <div class="cardCaro">
+                        <div class="cardCaroCon">
+                            <div class="carouImg">
+                                <img class="caroImgWrap" src="https://images.unsplash.com/photo-1533158144217-7c40c238db06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1570&q=80" alt="">
+                            </div>
+                            <div class="cardCarouCont">
+                                <div class="flex-1">
+                                    <h1>Gracia Lavared</h1>
+                                </div>
+                                <div class="flex-none">
+                                    <h1>Prices</h1>
+                                </div>
+                            </div>
+                            <div class="carouItemTitle">
+                                <div class="flex-1">
+                                    <div class="w-[144px] sm:w-[194px]">
+                                        <h1>Colorful Heart Glass Arts #003</h1>
+                                    </div>
+                                </div>
+                                <div class="flex-none">
+                                    <div class="flex">
+                                        <img class="h-auto w-auto mr-2" src="./img/eth.svg" alt="">
+                                        <h1>0.99</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex absolute bottom-0 w-full">
+                                <a href="#" class="carouBut">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Items-->
+                    <div class="cardCaro">
+                        <div class="cardCaroCon">
+                            <div class="carouImg">
+                                <img class="caroImgWrap" src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
+                            </div>
+                            <div class="cardCarouCont">
+                                <div class="flex-1">
+                                    <h1>Darisa Levis</h1>
+                                </div>
+                                <div class="flex-none">
+                                    <h1>Prices</h1>
+                                </div>
+                            </div>
+                            <div class="carouItemTitle">
+                                <div class="flex-1">
+                                    <div class="w-[144px] sm:w-[194px]">
+                                        <h1>Sky On Fire And Ice #78</h1>
+                                    </div>
+                                </div>
+                                <div class="flex-none">
+                                    <div class="flex">
+                                        <img class="h-auto w-auto mr-2" src="./img/eth.svg" alt="">
+                                        <h1>0.05</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex absolute bottom-0 w-full">
+                                <a href="#" class="carouBut">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Items-->
+                    <div class="cardCaro">
+                        <div class="cardCaroCon">
+                            <div class="carouImg">
+                                <img class="caroImgWrap" src="https://images.unsplash.com/photo-1484136199491-6603c473c88b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                            </div>
+                            <div class="cardCarouCont">
+                                <div class="flex-1">
+                                    <h1>Pascal Zayn</h1>
+                                </div>
+                                <div class="flex-none">
+                                    <h1>Prices</h1>
+                                </div>
+                            </div>
+                            <div class="carouItemTitle">
+                                <div class="flex-1">
+                                    <div class="w-[144px] sm:w-[194px]">
+                                        <h1>Abstract Grafity #22</h1>
+                                    </div>
+                                </div>
+                                <div class="flex-none">
+                                    <div class="flex">
+                                        <img class="h-auto w-auto mr-2" src="./img/eth.svg" alt="">
+                                        <h1>0.88</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex absolute bottom-0 w-full">
+                                <a href="#" class="carouBut">
+                                    Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- End Carousel -->
+        
+        <!-- Ready -->
+        <section class="ready pt-[56px]">
+            <div class="w-full h-[340px] relative">
+                <div class="readyBackground w-full h-full">
+                    <img class="w-full h-full object-cover blur-sm rotate-180" src="https://images.unsplash.com/photo-1561998338-13ad7883b20f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
+                </div>
+                <div class="readyCapt absolute w-full top-1/4">
+                    <div class="flex items-center justify-center">
+                        <div class="content text-center">
+                            <h1 class="readyHeadline">Ready to Collect NFT?</h1>
+                            <h2 class="readyMini ">You can collect NFT from sells our digital asset in here</h2>
+                            <a href="#" class="readyBut">Start Today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Ready -->
+    </main>
+    <!-- End Main -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerWrapper">
+            <div class="grid grid-cols-12 grid-rows-1">
+                <div class="col-span-12 mb-6 mxl:mb-0 mxl:col-span-3">
+                    <h1 class="font-semibold text-[24px] text-white"><span class="text-primary">NFT</span> Everywhere</h1>
+                </div>
+                <div class="col-span-12 mxl:col-span-9">
+                    <div class="footConWrap">
+                        <div class="footItem">
+                            <h1 class="footTile">Explore</h1>
+                            <a href="#" class="footAct">Digital Arts</a>
+                            <a href="#" class="footAct">Abstract</a>
+                            <a href="#" class="footAct">Pixels</a>
+                            <a href="#" class="footAct">Photography</a>
+                        </div>
+                        <div class="footItem">
+                            <h1 class="footTile">Account</h1>
+                            <a href="#" class="footAct">Login</a>
+                            <a href="#" class="footAct">Register</a>
+                        </div>
+                        <div class="footItem">
+                            <h1 class="footTile">Stats</h1>
+                            <a href="#" class="footAct">Ranking</a>
+                            <a href="#" class="footAct">Activity</a>
+                        </div>
+                        <div class="footItem">
+                            <h1 class="footTile">Company</h1>
+                            <a href="#" class="footAct">About Us</a>
+                            <a href="#" class="footAct">Help</a>
+                            <a href="#" class="footAct">Terms of Services</a>
+                            <a href="#" class="footAct">Privacy Policy</a>
+                        </div>
+                        <div class="footItem">
+                            <h1 class="footTile">Contact Us</h1>
+                            <a href="#" class="footAct">(022) 618 999</a>
+                            <a href="#" class="footAct">hello@nfteverywhere.com</a>
+                            <div class="footIcon flex space-x-3">
+                                <a href="#" class="footAct">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z" fill="#DADADA"/>
+                                    </svg>                            
+                                </a>
+                                <a href="#" class="footAct">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7_379)">
+                                        <path d="M23.5 6.50701C23.3641 6.02225 23.0994 5.58336 22.734 5.23702C22.3583 4.88002 21.8978 4.62465 21.396 4.49501C19.518 4.00001 11.994 4.00002 11.994 4.00002C8.85734 3.96433 5.72144 4.12129 2.60401 4.47001C2.1022 4.60923 1.64257 4.8703 1.26601 5.23002C0.896007 5.58601 0.628007 6.02502 0.488007 6.50602C0.1517 8.31776 -0.0117011 10.1574 6.83166e-06 12C-0.0119932 13.841 0.151007 15.68 0.488007 17.494C0.625007 17.973 0.892007 18.41 1.26301 18.763C1.63401 19.116 2.09601 19.371 2.60401 19.506C4.50701 20 11.994 20 11.994 20C15.1347 20.0358 18.2746 19.8788 21.396 19.53C21.8978 19.4004 22.3583 19.145 22.734 18.788C23.0993 18.4417 23.3637 18.0028 23.499 17.518C23.8441 15.707 24.0119 13.8666 24 12.023C24.026 10.1716 23.8584 8.32258 23.5 6.50602V6.50701ZM9.60201 15.424V8.57701L15.862 12.001L9.60201 15.424Z" fill="#DADADA"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_7_379">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>                                
+                                </a>
+                                <a href="#" class="footAct">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.643 4.93702C22.808 5.30702 21.911 5.55702 20.968 5.67002C21.941 5.08781 22.669 4.17148 23.016 3.09202C22.1019 3.63501 21.1014 4.01721 20.058 4.22202C19.3564 3.47288 18.4271 2.97634 17.4143 2.80949C16.4016 2.64264 15.3621 2.81481 14.4572 3.29927C13.5524 3.78373 12.8328 4.55338 12.4102 5.48872C11.9875 6.42406 11.8855 7.47277 12.12 8.47202C10.2677 8.37901 8.45564 7.89757 6.80144 7.05892C5.14723 6.22028 3.68785 5.04318 2.51801 3.60402C2.11801 4.29402 1.88801 5.09402 1.88801 5.94602C1.88757 6.71301 2.07644 7.46826 2.43789 8.14475C2.79934 8.82124 3.32217 9.39805 3.96001 9.82402C3.22029 9.80048 2.49688 9.6006 1.85001 9.24102V9.30102C1.84994 10.3768 2.22204 11.4194 2.90319 12.252C3.58434 13.0846 4.53258 13.6559 5.58701 13.869C4.9008 14.0547 4.18135 14.0821 3.48301 13.949C3.78051 14.8746 4.36001 15.684 5.14038 16.2639C5.92075 16.8438 6.86293 17.1652 7.83501 17.183C6.18484 18.4784 4.1469 19.1811 2.04901 19.178C1.67739 19.1781 1.30609 19.1564 0.937012 19.113C3.06649 20.4822 5.54535 21.2088 8.07701 21.206C16.647 21.206 21.332 14.108 21.332 7.95202C21.332 7.75202 21.327 7.55002 21.318 7.35002C22.2293 6.69099 23.0159 5.87491 23.641 4.94002L23.643 4.93702Z" fill="#DADADA"/>
+                                    </svg>                                
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-[50px] h-[1px] border-white/40">
+            <div class="flex justify-center mt-10">
+                <h1 class="text-primary">© Nico Abel Laia | WeekGenz</h1>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous">
+    </script>
+
+    <!-- Owl Script -->
+    <script src="scripts/carousel.js"></script>
+
+    <!-- Custom Script -->
+    <script src="./scripts/script.js"></script>
+
+</body>
+</html>

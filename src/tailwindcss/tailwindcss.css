@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+@layer components{
+    /* Right Side */
+    .navBut{
+        @apply font-medium text-[16px] bmd:text-[20px] py-[13px] hover:cursor-pointer hover:bg-secBackground text-white px-[40px] bmd:py-0 bmd:px-0 bmd:hover:bg-transparent bmd:cursor-auto
+    }
+    /* End Right Side */
+
+    /* Header Section */
+    .headTitle{
+        @apply font-semibold text-white text-[30px] bsm:text-[40px] mlg:text-[48px] leading-tight mt-11
+    }
+    .headParag{
+        @apply  font-medium text-[12px] bsm:text-[15px] mmd:text-[16px] bxl:text-[20px] opacity-50 text-white mt-[8px]
+    }
+    .picHead{
+        @apply hidden md:block md:col-span-5 mmd:col-span-7
+    }
+    .cardHead{
+        @apply absolute bottom-0 w-full
+    }
+    .priceTag{
+        @apply flex bg-mainBackground py-[5px] px-[9px] rounded-tr-xl rounded-bl-xl
+    }
+    .headCardName{
+        @apply text-white/80 text-[15px] sm:text-[18px] font-medium
+    }
+    .headCardTitle{
+        @apply text-white text-[20px] font-semibold
+    }
+    /* End Header Section */
+
+    /* Picture Header */
+    .picHeader{
+        @apply flex space-x-[26px] mt-[87px] mb-[-10px]
+    }
+    .imgHead{
+        @apply w-full h-[137px] relative
+    }
+    .headCardFilter{
+        @apply absolute w-full h-full rounded-lg 
+    }
+    .headImgWrapper{
+        @apply object-cover w-full h-full rounded-bl-2xl rounded-br-2xl rounded-tl-lg rounded-tr-lg
+    }
+    /* End Picture Header */
+
+    /* Web Count */
+    .itemCount{
+        @apply flex justify-evenly sm:justify-center sm:space-x-[108px]
+    }
+    .countNum{
+        @apply font-semibold text-[22px] sm:text-[32px] text-white
+    }
+    .countName{
+        @apply font-medium text-[12px] sm:text-[20px] text-white/80
+    }
+    /* End Web Count */
+
+    /* Category */
+    .category{
+        @apply px-[40px] sm:px-[68px] md:px-[88px] pt-[56px]
+    }
+    .catHeader{
+        @apply text-[22px] sm:text-[32px] font-semibold text-white
+    }
+    .catName{
+        @apply font-semibold text-[14px] sm:text-[20px] text-white py-[8px] px-[12px] bg-mainBackground rounded-bl-3xl rounded-tr-3xl
+    }
+    .catImg{
+        @apply w-full h-[180px] object-cover rounded-3xl
+    }
+    /* End Category */
+
+    /* Carousel */
+    .popularTitle{
+        @apply text-[22px] sm:text-[32px] font-semibold text-white
+    }
+    .seeAllCar{
+        @apply font-semibold text-[14px] sm:text-[20px] text-primary
+    }
+    .cardCaro{
+        @apply w-[259px] h-[529px] sm:w-[379px] sm:h-[659px] bg-secBackground rounded-2xl p-[24px]
+    }
+    .cardCaroCon{
+        @apply w-full h-full relative
+    }
+    .carouImg{
+        @apply h-[309px] sm:h-[438px]
+    }
+    .caroImgWrap{
+        @apply w-full h-full object-cover rounded-2xl
+    }
+    .cardCarouCont{
+        @apply flex mt-[16px] font-medium text-[13px] sm:text-[18px] text-white/80
+    }
+    .carouItemTitle{
+        @apply flex mt-[8px] font-semibold text-[15px] sm:text-[20px] text-white
+    }
+    .carouBut{
+        @apply w-full bg-primary text-center text-[20px] font-semibold text-white rounded-xl py-[10px]
+    }
+    /* End carousel */
+
+    /* Ready */
+    .readyHeadline{
+        @apply font-semibold text-[24px] bsm:text-[30px] sm:text-[48px] text-white
+    }
+    .readyMini{
+        @apply font-medium text-[10px] bsm:text-[14px] sm:text-[20px] text-white/50 mb-[24px]
+    }
+    .readyBut{
+        @apply rounded-lg py-[8px] px-[32px] bg-primary text-white text-[14px] sm:text-[20px] font-semibold
+    }
+    /* End Ready */
+
+    /* Footer */
+    .footerWrapper{
+        @apply px-[40px] sm:px-[68px] md:px-[88px] py-[80px] bg-mainBackground
+    }
+    .footConWrap{
+        @apply flex flex-col space-y-10 lg:space-y-0 lg:flex-row justify-between
+    }
+    .footItem{
+        @apply flex flex-col space-y-[20px]
+    }
+    .footTile{
+        @apply font-semibold text-primary text-[18px] sm:text-[20px]
+    }
+    .footAct{
+        @apply text-white/80 text-[15px] sm:text-[18px] font-medium
+    }
+    /* End Footer */
+}

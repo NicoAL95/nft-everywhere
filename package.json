@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/tailwindcss/tailwindcss.css -o ./public/css/main.css --watch",
+    "sass": "sass --no-source-map --watch ./src/scss/addons.scss ./public/css/addons.css"
+  }
+}

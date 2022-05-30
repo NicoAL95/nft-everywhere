@@ -1,0 +1,21 @@
+header .bgFilter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-color: black;
+}
+header .headCardFilter {
+  background: #120227;
+  background: linear-gradient(0deg, #120227 14%, rgba(18, 2, 39, 0.1180847339) 100%);
+}
+
+.geser {
+  margin-left: 88px;
+}
+
+.owl-stage {
+  width: 32156000px !important;
+}
